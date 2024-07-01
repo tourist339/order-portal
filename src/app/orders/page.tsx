@@ -53,7 +53,6 @@ export default function OrderPage(){
         </h1>
     <button onClick={()=> {
         setWorkerData([])
-        alert("fdsfsdfs")
     }}> bro</button>
     <DataTable columns={columns} data={data} ></DataTable>
             <AssignOrder isOpen={isAssignOpen} workerData={workerData}></AssignOrder>
