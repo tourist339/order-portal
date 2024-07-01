@@ -18,8 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <nav>
+      <nav className={"root-nav" }>
         <Link href="/orders">Orders</Link>
+          <Link href="/property">Property</Link>
+
+
       </nav>
       {children}</body>
     </html>
