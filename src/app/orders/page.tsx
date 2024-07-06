@@ -3,7 +3,7 @@ import DataTable from "@/app/orders/dataTable";
 import AssignOrder from "@/app/orders/assignOrder";
 import {useState} from "react";
 import {WorkerData} from "@/model/workerdata";
-import {Order} from "@/model/order";
+import {Order,Status} from "@/model/order";
 import {ColumnDef} from "@tanstack/table-core";
 
 export default function OrderPage(){
@@ -37,8 +37,16 @@ export default function OrderPage(){
     const data :Order[] = [
         {
             id:"123",
+            details: "demo fake",
+            status: Status.TODO,
             created: new Date(),
-            assignee:"fdsfs"
+            due: new Date(),
+            image: {
+                src: "../orders/image.png",
+                alt: "Sample image"
+            },
+            comments: "nvjnsdknclksdn",
+            assignee: "fdsfs",
         }
     ];
 

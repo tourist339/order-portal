@@ -18,13 +18,33 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <nav className={"root-nav" }>
-        <Link href="/orders">Orders</Link>
-          <Link href="/property">Property</Link>
-
-
-      </nav>
-      {children}</body>
+        <nav>
+          <div className="w-full h-20 bg-emerald-800 sticky top-0">
+            <div className="container mx-auto px-4 h-full">
+              <div className="flex justify-between items-center h-full">
+                <ul className="hidden md:flex gap-x-6 text-white">
+                  <li>
+                    <Link href="/orders">
+                      <p>Orders</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/property">
+                      <p>Properties</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/teams">
+                      <p>Teams</p>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
