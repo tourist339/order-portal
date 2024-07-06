@@ -3,11 +3,11 @@ import {Column, ColumnDef, getCoreRowModel} from "@tanstack/table-core";
 import {flexRender, useReactTable} from "@tanstack/react-table";
 import {Order} from "@/model/order";
 import AssignOrder from "@/app/orders/assignOrder";
-type dataTableProps = {
-    columns: ColumnDef<Order>[];
-    data:Order[];
+type dataTableProps<T> = {
+    columns: ColumnDef<T>[];
+    data:T[];
 }
-const DataTable:React.FC<dataTableProps> = ({columns,data})=> {
+const DataTable = <T,>({columns,data}:dataTableProps<T>)=> {
 
 
 

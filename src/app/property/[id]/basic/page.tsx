@@ -1,6 +1,17 @@
 
 export default function BasicDetails(){
     return(
-        <h1>Basic Details</h1>
+        <>
+            <form>
+                <label>Address</label>
+                <input type={"text"}/>
+                <label>Owner</label>
+                <input type={"text"}/>
+                <label>Address</label>
+                <input type={"text"}/>
+                <label>Address</label>
+                <input type={"text"}/>
+            </form>
+        </>
     )
 }

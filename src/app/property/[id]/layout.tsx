@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SideNav from "@/app/property/(components)/SideNav";
+import SideNav from "@/app/property/(components)/sidebar/SideNav";
 import {Property} from "@/model/property";
 async function fetchProperty(id:string):Promise<Property>{
     console.log(id)
@@ -21,13 +21,10 @@ export default async function PropertyLayout({
     const prop = await fetchProperty(params.id)
     return (
         <>
-            <div className={"flex"}>
-                <h1>Property</h1>
-            </div>
-            <div className={"flex"}>
-                <SideNav/>
-            </div>
+            <div className={"flex h-full"}>
+            <SideNav/>
             {children}
+            </div>
         </>
     );
 }
