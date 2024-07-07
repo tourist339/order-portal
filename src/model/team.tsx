@@ -1,10 +1,9 @@
-export type Team={
+export type TeamMember={
     firstName: string,
     lastName: string,
     email: string,
     phone: string,
     designation: string,
-    property: Property[],
     notificationType: Notification[],
 }
 

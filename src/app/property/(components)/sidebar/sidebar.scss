@@ -1,0 +1,9 @@
+.sidebar{
+    height: 100%;
+    width: 300px;
+    background-color: green;
+    &>*{
+        padding: 10px;
+}
+}
+
