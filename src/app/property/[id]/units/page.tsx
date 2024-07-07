@@ -2,7 +2,7 @@
 import DataTable from "@/components/dataTable";
 import {ColumnDef} from "@tanstack/table-core";
 import {Order} from "@/model/order";
-import "./unit.css"
+import "./unit.scss"
 import AddUnit from "@/app/property/[id]/units/addUnit";
 import {useState} from "react";
 export default function Unit(){
