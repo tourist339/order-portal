@@ -1,5 +1,5 @@
 "use client"
-import DataTable from "@/app/[components]/dataTable";
+import DataTable from "@/components/dataTable";
 import AssignOrder from "@/app/orders/assignOrder";
 import {useState} from "react";
 import {WorkerData} from "@/model/workerdata";

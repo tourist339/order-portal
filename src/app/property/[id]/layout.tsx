@@ -22,7 +22,7 @@ export default async function PropertyLayout({
     return (
         <>
             <div className={"flex h-full"}>
-            <SideNav/>
+            <SideNav id={params.id}/>
             {children}
             </div>
         </>

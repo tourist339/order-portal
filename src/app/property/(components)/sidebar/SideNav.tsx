@@ -2,16 +2,12 @@
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import "./sidebar.css"
-export default function SideNav() {
-    const currentPage = usePathname();
-    const absURL= (page)=>{
-        return currentPage+page;
-    }
+export default function SideNav({id}:{id:string}) {
     return (
         <nav className={"flex flex-col sidebar"}>
-            <Link href={absURL("/basic")}>Basic Details</Link>
-            <Link href={absURL("/units")}>Units</Link>
-            <Link href={absURL("/team")}>Team</Link>
+            <Link href={`/property/${id}/basic`}>Basic Details</Link>
+            <Link href={`/property/${id}/units`}>Units</Link>
+            <Link href={`/property/${id}/team`}>Team</Link>
         </nav>
     )
 }
