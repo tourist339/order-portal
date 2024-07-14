@@ -17,7 +17,7 @@ const DataTable = <T,>({columns,data,getRowCanExpand,subRowComponent, fixedFirst
 
 
     const table = useReactTable({
-        columns,data,getCoreRowModel: getCoreRowModel()
+        columns,data, getRowCanExpand, getCoreRowModel: getCoreRowModel()
     });
 
     return (
