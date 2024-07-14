@@ -32,7 +32,8 @@ export default function OrderPage(){
                 </button>
             )
 
-        }
+        },
+       
     ]
     const data :Order[] = [
         {

@@ -10,6 +10,9 @@ export type Property={
 
 export type Tenant = {
 
+    unitNumber: string,
+    FirstName: string,
+    LastName: string,
 }
 
 export type Unit = {
